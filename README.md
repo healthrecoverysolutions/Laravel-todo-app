@@ -13,7 +13,7 @@ This is a basic to-do app with authentication created as a part of tutorial for 
 - run `docker-compose up -d` in the app folder.
 - run `docker exec -it app php artisan migrate`
 - run `docker exec -it app php artisan vendor:publish`
-- go to `http://localhost` in your browser and verify that the app loads correctly.
+- go to `http://localhost:81` in your browser and verify that the app loads correctly.
 
 # Instructions
 ## Backend
