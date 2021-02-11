@@ -40,8 +40,6 @@ COPY . /var/www
 WORKDIR /var/www
 
 RUN composer install
-RUN php artisan migrate
-RUN php artisan vendor:publish
 
 # Copy existing application directory permissions
 COPY --chown=www:www . /var/www
