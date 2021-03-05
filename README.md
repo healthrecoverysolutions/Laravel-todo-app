@@ -7,13 +7,20 @@ This is a basic to-do app with authentication created as a part of tutorial for 
 ### Requirements
 - Docker
 - docker-compose
+- composer (https://getcomposer.org/download/)
 
 ### Installation
 - Clone this git repository.
+- In the project root, run `composer install`.  
 - run `docker-compose up -d` in the app folder.
-- run `docker exec -it app php artisan migrate`
+- run `docker exec -it app php artisan migrate:fresh --seed`
 - run `docker exec -it app php artisan vendor:publish`
-- go to `http://localhost:81` in your browser and verify that the app loads correctly.
+- go to `http://localhost:81/dashboard` in your browser and verify that the app loads correctly.
+    - You should be able to login with the username `test@test.com` and password `test`.
+    
+
+### Installation troubleshooting
+- run `docker-compose down` and remove your `/vendor` folder and re-execute the instructions from the `Installation` section beginning with running `composer install`.
 
 # Instructions
 ## Backend
