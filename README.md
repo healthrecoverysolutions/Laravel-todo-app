@@ -7,11 +7,9 @@ This is a basic to-do app with authentication created as a part of tutorial for 
 ### Requirements
 - Docker
 - docker-compose
-- composer (https://getcomposer.org/download/)
 
 ### Installation
 - Clone this git repository.
-- In the project root, run `composer install`.  
 - run `docker-compose up -d` in the app folder.
 - run `docker exec -it app php artisan migrate:fresh --seed`
 - run `docker exec -it app php artisan vendor:publish`
