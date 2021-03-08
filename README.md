@@ -20,7 +20,7 @@ This is a basic to-do app with authentication created as a part of tutorial for 
     
 
 ### Installation troubleshooting
-- run `docker-compose down` and remove your `/vendor` folder and re-execute the instructions from the `Installation` section beginning with running `composer install`.
+- run `docker-compose down`, remove your `/vendor` folder and re-execute the instructions from the `Installation` section beginning with running `docker-compose up -d`.
 
 # Instructions
 ## Backend
