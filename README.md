@@ -12,7 +12,9 @@ This is a basic to-do app with authentication created as a part of tutorial for 
 - Clone this git repository.
 - run `docker-compose up -d` in the app folder.
 - run `docker exec -it app php artisan migrate:fresh --seed`
+  - If you receive an error mentioning a problem with `autoload.php`, run `docker exec -it app composer dump-autoload`
 - run `docker exec -it app php artisan vendor:publish`
+  - Choose option 0 to install all vendors.
 - go to `http://localhost:81/dashboard` in your browser and verify that the app loads correctly.
     - You should be able to login with the username `test@test.com` and password `test`.
     
